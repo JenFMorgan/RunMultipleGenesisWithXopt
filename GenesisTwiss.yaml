@@ -1,0 +1,22 @@
+xopt: {asynch: false, strict: false, dump_file: null, max_evaluations: null}
+generator: {name: random}
+evaluator:
+  function: Genesis_function.evaluate_genesis
+  function_kwargs: {
+    run_file_location: /sdf/home/j/jmorgan/lclsrepo_dontsharethese/lcls-lattice/genesis/version4/cu_hxr/,
+    run_file: cu_hxr.in,
+    workdir: /sdf/scratch/users/j/jmorgan, 
+    archive_path: /sdf/home/j/jmorgan/beamphysics/jmorgan/ML/Model_twissandtaper/Example/Results,
+    nproc: 30}
+  vectorized: false
+vocs:
+  variables:
+    alphax: [-1.2, 0]
+    alphay: [0, 1.2]
+    betax: [5, 10]
+    betay: [15, 20]
+    taper: [0, 0.03]
+  constraints: {}
+  objectives: {}
+  constants: {}
+  linked_variables: {}
